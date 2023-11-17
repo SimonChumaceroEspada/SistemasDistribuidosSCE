@@ -1,0 +1,10 @@
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\bin\Debug\FormularioPronostico.exe.config
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\bin\Debug\FormularioPronostico.exe
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\bin\Debug\FormularioPronostico.pdb
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\obj\Debug\FormularioPronostico.csprojAssemblyReference.cache
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\obj\Debug\FormularioPronostico.Form1.resources
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\obj\Debug\FormularioPronostico.Properties.Resources.resources
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\obj\Debug\FormularioPronostico.csproj.GenerateResource.cache
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\obj\Debug\FormularioPronostico.csproj.CoreCompileInputs.cache
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\obj\Debug\FormularioPronostico.exe
+C:\Users\simon\source\repos\FormularioPronostico\FormularioPronostico\obj\Debug\FormularioPronostico.pdb

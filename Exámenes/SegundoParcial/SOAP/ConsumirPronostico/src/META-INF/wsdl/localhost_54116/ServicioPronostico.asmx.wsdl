@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaludoPrueba">
+        <s:complexType />
+      </s:element>
+      <s:element name="SaludoPruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaludoPruebaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerPronosticoPorFecha">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerPronosticoPorFechaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerPronosticoPorFechaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerPronosticosPorTemperatura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="temperatura" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerPronosticosPorTemperaturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerPronosticosPorTemperaturaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerPronosticosPorProbabilidadLluvia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="probabilidadLluvia" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerPronosticosPorProbabilidadLluviaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerPronosticosPorProbabilidadLluviaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerTodosLosPronosticos">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerTodosLosPronosticosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerTodosLosPronosticosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaludoPruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:SaludoPrueba" />
+  </wsdl:message>
+  <wsdl:message name="SaludoPruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:SaludoPruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerPronosticoPorFechaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerPronosticoPorFecha" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerPronosticoPorFechaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerPronosticoPorFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerPronosticosPorTemperaturaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerPronosticosPorTemperatura" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerPronosticosPorTemperaturaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerPronosticosPorTemperaturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerPronosticosPorProbabilidadLluviaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerPronosticosPorProbabilidadLluvia" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerPronosticosPorProbabilidadLluviaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerPronosticosPorProbabilidadLluviaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerTodosLosPronosticosSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerTodosLosPronosticos" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerTodosLosPronosticosSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerTodosLosPronosticosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServicioPronosticoSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaludoPrueba">
+      <wsdl:input message="tns:SaludoPruebaSoapIn" />
+      <wsdl:output message="tns:SaludoPruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPronosticoPorFecha">
+      <wsdl:input message="tns:ObtenerPronosticoPorFechaSoapIn" />
+      <wsdl:output message="tns:ObtenerPronosticoPorFechaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPronosticosPorTemperatura">
+      <wsdl:input message="tns:ObtenerPronosticosPorTemperaturaSoapIn" />
+      <wsdl:output message="tns:ObtenerPronosticosPorTemperaturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPronosticosPorProbabilidadLluvia">
+      <wsdl:input message="tns:ObtenerPronosticosPorProbabilidadLluviaSoapIn" />
+      <wsdl:output message="tns:ObtenerPronosticosPorProbabilidadLluviaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerTodosLosPronosticos">
+      <wsdl:input message="tns:ObtenerTodosLosPronosticosSoapIn" />
+      <wsdl:output message="tns:ObtenerTodosLosPronosticosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicioPronosticoSoap" type="tns:ServicioPronosticoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaludoPrueba">
+      <soap:operation soapAction="http://tempuri.org/SaludoPrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPronosticoPorFecha">
+      <soap:operation soapAction="http://tempuri.org/ObtenerPronosticoPorFecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPronosticosPorTemperatura">
+      <soap:operation soapAction="http://tempuri.org/ObtenerPronosticosPorTemperatura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPronosticosPorProbabilidadLluvia">
+      <soap:operation soapAction="http://tempuri.org/ObtenerPronosticosPorProbabilidadLluvia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerTodosLosPronosticos">
+      <soap:operation soapAction="http://tempuri.org/ObtenerTodosLosPronosticos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicioPronosticoSoap12" type="tns:ServicioPronosticoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaludoPrueba">
+      <soap12:operation soapAction="http://tempuri.org/SaludoPrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPronosticoPorFecha">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerPronosticoPorFecha" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPronosticosPorTemperatura">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerPronosticosPorTemperatura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPronosticosPorProbabilidadLluvia">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerPronosticosPorProbabilidadLluvia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerTodosLosPronosticos">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerTodosLosPronosticos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioPronostico">
+    <wsdl:port name="ServicioPronosticoSoap" binding="tns:ServicioPronosticoSoap">
+      <soap:address location="http://localhost:54116/ServicioPronostico.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServicioPronosticoSoap12" binding="tns:ServicioPronosticoSoap12">
+      <soap12:address location="http://localhost:54116/ServicioPronostico.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
