@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration {
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('banco_union_cuentas', function (Blueprint $table) {
+            $table->id();
+            $table->string('numero_cuenta');
+            $table->string('moneda');
+            $table->float('saldo');
+            $table->unsignedBigInteger('codigo_cliente');
+            // Llave foranea
+            $table->foreign('codigo_cliente')->references('codigo_cliente')->on('banco_union_clientes');
+            $table->timestamps();
+
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('banco_union_cuentas');
+    }
+};
