@@ -1,0 +1,10 @@
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\bin\Debug\FormularioSERECU.exe.config
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\bin\Debug\FormularioSERECU.exe
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\bin\Debug\FormularioSERECU.pdb
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\obj\Debug\FormularioSERECU.csprojAssemblyReference.cache
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\obj\Debug\FormularioSERECU.Form1.resources
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\obj\Debug\FormularioSERECU.Properties.Resources.resources
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\obj\Debug\FormularioSERECU.csproj.GenerateResource.cache
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\obj\Debug\FormularioSERECU.csproj.CoreCompileInputs.cache
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\obj\Debug\FormularioSERECU.exe
+C:\Users\simon\source\repos\FormularioSERECU\FormularioSERECU\obj\Debug\FormularioSERECU.pdb
